@@ -1,10 +1,10 @@
 
 const nomeUsuario = prompt('Digite seu nome');
 
-const sectionNomeUsuario = document.querySelector('.nomeUsuario');
-const bemVindo = `<p>Bem vindo(a) ${nomeUsuario}.</p>`
-console.log(nomeUsuario);
-sectionNomeUsuario.innerHTML = bemVindo;
+const sectionNomeUsuario = document.querySelector('.nomeUsuario p');
+
+sectionNomeUsuario.textContent += ' ' + nomeUsuario + ', '
+sectionNomeUsuario.textContent += 'fique à vontade em usar nosso cronômetro';
 
 
 

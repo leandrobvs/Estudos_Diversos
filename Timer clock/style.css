@@ -18,9 +18,11 @@
 }
 
 .nomeUsuario {
+  max-width: 800px;
   text-align: center;
   font-size: 2em;
   color:#fff;
+  margin-inline: auto;
 }
 
 h1 {
@@ -42,7 +44,7 @@ h1 {
 }
 
 .pausado {
-  color:rgb(139, 0, 42);
+  color:rgb(190, 19, 19);
 }
 
 
