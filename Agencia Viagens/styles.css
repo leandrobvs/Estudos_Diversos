@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Catamaran&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+/* 
+font-family: 'Bowlby One', cursive;
+font-family: 'Catamaran', sans-serif; 
+font-family: 'Grand Hotel', sans-serif;
+*/
+
+/* Começo animações ////////////////////////////////////////////////////////////////*/
+
+@keyframes show {
+    0% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes show2 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes geleia {
+    0% {      
+        transform: scale3d(1, 1, 1);
+    }
+    30% {      
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {      
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {      
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {      
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {      
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {      
+        transform: scale3d(1, 1, 1);
+    }
+  }
+
+/* Final animações ////////////////////////////////////////////////////////////////*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+:root {
+  --corPrincipal: #ffd500;
+  --corSecundaria: #fdc500;
+  --corAzulClaro: #00509d;
+  --corAzulEscuro: #00296b;
+  --fontePadrao: "Catamaran", sans-serif;
+  --efeitoTransicaoPadrao: all 0.2s ease-in-out;
+  --efeitoTransicaoLento: all 1s ease-in-out;
+
+  --fonteTitulo: "Bowlby One", cursive;
+  --fonteSubTitulo: "Grand Hotel", cursive;
+  --letterspacing: 0.5rem;
+}
+
+/* Helpers / Utilities classes ////////////////////////////////////////////////////////////////*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+a {
+  text-decoration: none;
+}
+
+/* Main Page / Header ////////////////////////////////////////////////////////////////*/
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(./assets/images/pexels-jimmy-teoh-1010657.jpg) center/cover no-repeat
+      fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  letter-spacing: var(--letterspacing);
+  background-color: #ffffffa1;
+  border-radius: 30px;
+  padding: 60px 60px;
+}
+
+h1 {
+  
+  font-size: 10rem;
+  font-family: var(--fonteTitulo);
+  color: var(--corPrincipal);
+  text-shadow: 2px 2px 2px rgb(31, 31, 31);
+  animation: show2 2s ease-in-out 1;
+}
+
+.subtitulo {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: var(--fontePadrao);
+  color: var(--corAzulClaro);
+  text-shadow: 1px 1px 2px rgb(31, 31, 31);
+  margin-bottom: 40px;
+  text-align: center;
+  animation: show2 2s ease-in-out 1;
+}
+
+.titulo-botao {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: var(--fontePadrao);
+}
+
+.botao-style {
+  display: inline-block;
+  background: var(--corPrincipal);
+  padding: 0.7rem 3rem;
+  text-transform: uppercase;
+  color: rgb(158, 142, 0);
+  font-weight: bold;
+  outline: 0.6rem solid var(--corPrincipal);
+  outline-offset: 0.6rem;
+  cursor: pointer;
+  transition: var(--efeitoTransicaoPadrao);
+  animation: show 3s ease-in-out 1;
+}
+
+.botao-style:hover {
+  color: var(--corAzulClaro);
+  opacity: 0.7;
+}
+
+
+
+/* Divisor ////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.divisor {
+  height: 1rem;
+  background: linear-gradient(
+    to left,
+    var(--corSecundaria),
+    var(--corAzulEscuro),
+    var(--corSecundaria)
+  );
+}
+
+/* Secondary Page / Sessão 2 //////////////////////////////////////////////////////////////////////////*/
+
+.icones {
+  font-size: 5rem;
+  letter-spacing: 3rem;
+  margin-bottom: 2rem;
+}
+
+.titulo-vantagens {
+  font-size: 2.6rem;
+  font-family: var(--fontePadrao);
+  letter-spacing: var(--letterspacing);
+  color: var(--corAzulEscuro);
+  margin-bottom: 2rem;
+}
+
+.texto-vantagens {
+  font-size: 1.9rem;
+  font-family: var(--fontePadrao);
+  max-width: 30rem;
+  margin:0 auto;
+}
+
+.vantagens {
+    
+  background: #dfdfdf;
+  text-align: center;
+  transition: var(--efeitoTransicaoPadrao);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.vantagem:hover {
+    background: var(--corSecundaria);
+    
+}
+
+.vantagem {
+    display:block;
+    margin:0;
+    padding:4rem;
+    transition: var(--efeitoTransicaoLento);
+      
+}
+
+.vantagem:hover .titulo-vantagens {
+    color: white;
+    
+}
+.vantagem:hover .icones {
+    animation: geleia 0.9s both;
+    
+}
+
+
+
+/* Final Secondary Page / Sessão 2 ///////////////////////////////////////////////////////////////*/
+
+/* Inicio sessão 3 / SOBRE NOS ////////////////////////////////////////////////////////////////////*/
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 80vw;
+  padding:8rem 0;
+}
+
+.titulo-sobre {
+  font-size: 2.6rem;
+  font-family: var(--fontePadrao);
+  letter-spacing: var(--letterspacing);
+  color: var(--corAzulEscuro);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.texto-sobre {
+  font-size: 1.9rem;
+  font-family: var(--fontePadrao);
+  max-width: 50rem;
+  text-align: center;
+}
+
+/* .about-img-container {
+  border: 2px solid var(--corAzulClaro);
+  border-radius: 8px;
+  
+} */
+
+.about-img {
+  display: block;
+  border-radius: 15px;
+  width: 500px;
+  transition: var(--efeitoTransicaoLento);
+  
+}
+
+.about-img-container:hover .about-img {
+  transform: scale(1.4);
+}
+
+/* Final Secondary Page / Sessão 3 ///////////////////////////////////////////////////////////////*/
+
+/* Inicio sessão 4 / PACOTES ////////////////////////////////////////////////////////////////////*/
+
+.pacotes-container {
+  background: #dfdfdf;
+  height: 50vh;
+  
+}
