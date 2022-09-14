@@ -17,6 +17,12 @@
   line-height: 2.5em;
 }
 
+.nomeUsuario {
+  text-align: center;
+  font-size: 2em;
+  color:#fff;
+}
+
 h1 {
   text-align: center;
   

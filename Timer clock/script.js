@@ -1,3 +1,17 @@
+
+const nomeUsuario = prompt('Digite seu nome');
+
+const sectionNomeUsuario = document.querySelector('.nomeUsuario');
+const bemVindo = `<p>Bem vindo(a) ${nomeUsuario}.</p>`
+console.log(nomeUsuario);
+sectionNomeUsuario.innerHTML = bemVindo;
+
+
+
+
+
+
+
 function timer() {
 const relogio = document.querySelector(".relogio");
 
