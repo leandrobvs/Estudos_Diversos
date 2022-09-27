@@ -89,6 +89,21 @@ input {
   margin-bottom: 0.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+    margin-bottom: 3rem;
+  }
+
+  li {
+    font-size: 0.8em;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+}
+
 
 
 
