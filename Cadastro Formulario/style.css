@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@700&display=swap');
+:root {
+  --primary-color: rgb(18, 58, 90);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  
+}
+
+
+
+h1 {
+  text-align: center;
+  
+}
+
+.container {
+  margin-top: 60px;
+  max-width: 640px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  
+  margin-inline: auto;
+  
+}
+
+.form {
+  width:100%;
+  padding: 0 20px;
+}
+
+li {
+  list-style: square;
+}
+
+input {
+  width: 100%;
+  height:2rem;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  border:none;
+  border-bottom: 1px solid rgb(0, 64, 116, 0.7);
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin-top: 1rem;
+  width:100%;
+  height: 2rem;
+  border:none;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  color:#fff;
+  transition: all 0.5s ease-in-out;
+  margin: 2rem 0;
+
+}
+
+.btn:hover {
+  background-color: rgb(18, 58, 90, 0.5);
+  color:var(--primary-color);
+  font-weight: bolder;
+  border: 2px rgb(18, 58, 90, 0.5) solid;
+  
+  
+}
+
+.error-text {
+  color: red;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.error-text-typo {
+  color: red;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+    margin-bottom: 3rem;
+  }
+
+  li {
+    font-size: 0.8em;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
