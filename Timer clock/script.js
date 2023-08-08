@@ -1,3 +1,17 @@
+
+const nomeUsuario = prompt('Digite seu nome');
+
+const sectionNomeUsuario = document.querySelector('.nomeUsuario p');
+
+sectionNomeUsuario.textContent += ' ' + nomeUsuario + ', '
+sectionNomeUsuario.textContent += 'fique à vontade em usar nosso cronômetro';
+
+
+
+
+
+
+
 function timer() {
 const relogio = document.querySelector(".relogio");
 
