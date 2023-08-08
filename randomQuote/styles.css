@@ -1,0 +1,65 @@
+body {
+  background-color: #2596be;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.btn {
+  font-family: 'Coiny', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(88, 88, 88, 0.5);
+}
+
+.container {
+  width: 1200px;
+  background-color: #e7a255;
+  height: 50vh;
+  border-radius: 10px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 4px rgba(88, 88, 88, 0.5);
+}
+
+.quotes {
+  font-size: 150px;
+  font-family: 'Coiny', cursive;
+  color: #383838;
+  padding-left: 50px;
+}
+
+.content {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  max-width: 800px;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+p {
+  font-size: 40px;
+  position: absolute;
+  width: 800px;
+  font-family: 'Roboto Slab', serif;
+  color: #383838;
+}
+
+.autor {
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+  position: absolute;
+  bottom: -200px;
+  right: -400px;
+  color: #383838;
+}
