@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simpleNote</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <p>Deixe sua mensagem</p>
+        <form action="submit" id="form">
+          <input class="msg" type="text" />
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+        <span class="warning visibilityNone"
+          >Nenhuma msg digitada! Você consegue fazer melhor que isso!</span
+        >
+        <p>Última Mensagem Deixada:</p>
+        <p class="lastmsg"></p>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

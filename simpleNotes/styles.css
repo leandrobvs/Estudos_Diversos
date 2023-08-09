@@ -1,0 +1,80 @@
+body {
+  background-color: #7895b2;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.content {
+  background-color: #f5efe6;
+  width: 1000px;
+  padding: 30px 30px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px #5f5f5f;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 40px;
+  font-family: 'Bookman Old Style', cursive;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+  justify-content: center;
+  gap: 30px;
+}
+
+.msg {
+  width: 600px;
+  height: 40px;
+  border-radius: 10px;
+  border: solid 1px #e8dfca;
+  font-family: 'Bookman Old Style', cursive;
+  font-size: 20px;
+}
+
+.btn {
+  max-width: max-content;
+  align-self: center;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: solid 1px #e8dfca;
+  border-radius: 5px;
+  background-color: #7895b2;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #536f8b;
+}
+
+.lastmsg {
+  color: #7895b2;
+}
+
+.warning {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: red;
+  background-color: rgb(253, 174, 174);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.visibilityNone {
+  display: none;
+}
+
+.visibilityOn {
+  display: block;
+}
