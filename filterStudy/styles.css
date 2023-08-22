@@ -19,6 +19,13 @@ img {
 .menu li {
   background-color: beige;
   padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(92, 92, 92, 0.5);
+}
+
+.menu button {
+  border: none;
+  cursor: pointer;
 }
 
 .header {
@@ -30,4 +37,31 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   gap: 50px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+}
+
+.description1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.showOn {
+  display: block;
+}
+
+.showOff {
+  display: none;
 }
