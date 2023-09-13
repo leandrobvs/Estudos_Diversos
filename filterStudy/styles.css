@@ -45,6 +45,7 @@ img {
   max-width: 1400px;
   margin: 0 auto;
   gap: 50px;
+  padding-bottom: 150px;
 }
 
 .box {
@@ -64,4 +65,81 @@ img {
 
 .showOff {
   display: none;
+}
+
+.store-item {
+  overflow: hidden;
+}
+
+.store-item img {
+  transition: transform 0.5s ease;
+}
+
+.store-item img:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.modal-container {
+  position: fixed;
+  background-image: url(./img/relogio-bolso-001.jpg);
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto;
+  display: none;
+}
+
+.modal-content {
+  position: absolute;
+  height: 600px;
+  width: 800px;
+  background: url('./img/relogio-bolso-001.jpg') center/cover no-repeat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto;
+  border-radius: 5px;
+}
+
+.x {
+  position: relative;
+  left: 760px;
+  top: -45px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: antiquewhite;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: rgb(11, 76, 102);
+  cursor: pointer;
+}
+
+.left {
+  position: relative;
+  background-color: antiquewhite;
+  padding: 5px 10px;
+  border-radius: 5px;
+  left: -45px;
+  top: 250px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(11, 76, 102);
+  cursor: pointer;
+}
+
+.right {
+  position: relative;
+  background-color: antiquewhite;
+  padding: 5px 10px;
+  border-radius: 5px;
+  right: -765px;
+  top: 250px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(11, 76, 102);
+  cursor: pointer;
 }
