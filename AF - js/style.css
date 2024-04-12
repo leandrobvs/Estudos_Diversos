@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf6ed;
+}
+
+.nav-bg {
+  background-color: #faf6ed;
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  background-color: #fb5;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 300px;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.navigation li {
+  padding: 12px 6px;
+}
+
+.titulo {
+  font-size: 10rem;
+  line-height: 1;
+  font-weight: 400;
+  font-family: 'Playfair Display SC', georgia;
+}
+
+.titulo-bg {
+  margin-left: 150px;
+  padding: 0 0 80px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  padding: 12px 6px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 0 100px 300px;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+}
+
+.animais-scroll {
+  max-height: 520px;
+  overflow-y: scroll;
+}
+
+section img {
+  grid-column: 1;
+  max-width: 400px;
+}
+
+section .col-2 {
+  grid-column: 2;
+}
+
+section p {
+  font-size: 2.4rem;
+  max-width: 60ch;
+  margin-bottom: 20px;
+  font-family: Helvetica, Arial;
+}
+section h2 {
+  font-size: 3rem;
+  max-width: 60ch;
+  margin-bottom: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.animais h2:before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 14px;
+  background-color: #fb5;
+}
+
+.animais {
+  padding: 0 0 80px 0;
+}
+
+.faq-questions {
+  margin: 0 0 80px 300px;
+}
+
+.faq-questions dt {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+
+  margin-bottom: 1.5rem;
+  color: #e54;
+}
+
+.faq-questions dt:before {
+  content: '';
+  display: block;
+  width: 34px;
+  height: 12px;
+  background-color: #fb5;
+}
+
+.faq-questions dd {
+  font-size: 2rem;
+  max-width: 80ch;
+  font-family: Helvetica, Arial;
+  margin-bottom: 2rem;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 0 0 100px 300px;
+  gap: 40px;
+}
+
+.contato ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contato li {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contato li:before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 8px;
+  background-color: #fb5;
+}
+
+.footer {
+  margin: 0 0 100px 300px;
+  background-color: #fb5;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 2rem;
+  margin-left: 30px;
+  font-family: 'IBM Plex Mono', monospace;
+}
